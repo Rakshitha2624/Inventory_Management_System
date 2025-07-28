@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="inventory.StockLogController"
+      spacing="15" alignment="CENTER">
+    
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20" />
+    </padding>
+
+
+    
+    <Label text="Stock Movement Entry" style="-fx-font-size: 18px;" />
+
+    <HBox spacing="10">
+        <Label text="Product ID:"/>
+        <TextField fx:id="productIdField"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Action:"/>
+        <ChoiceBox fx:id="actionChoiceBox" prefWidth="120"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Quantity:"/>
+        <TextField fx:id="quantityField"/>
+    </HBox>
+
+    <Button text="Submit" onAction="#handleStockUpdate"/>
+
+</VBox>

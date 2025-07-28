@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="inventory.ViewProductsController">
+    <VBox spacing="10" AnchorPane.topAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.bottomAnchor="10.0">
+        <Label text="📋 All Products" style="-fx-font-size: 20px;" />
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="colId" text="ID" />
+                <TableColumn fx:id="colName" text="Name" />
+                <TableColumn fx:id="colQuantity" text="Quantity" />
+                <TableColumn fx:id="colPrice" text="Price" />
+                <TableColumn fx:id="colThreshold" text="Threshold" />
+            </columns>
+        </TableView>
+
+        <!-- ✅ Delete Button -->
+        <Button text="🗑️ Delete Product" onAction="#handleDeleteProduct" style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;" />
+    </VBox>
+</AnchorPane>

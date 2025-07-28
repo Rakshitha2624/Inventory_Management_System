@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="inventory.ViewVendorsController" prefWidth="600" prefHeight="400">
+    <top>
+        <Label text="Vendor List" style="-fx-font-size: 20px; -fx-padding: 10;" BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+       <TableView fx:id="vendorTable">
+    		<columns>
+        		<TableColumn fx:id="idColumn" text="ID" prefWidth="50"/>
+        		<TableColumn fx:id="nameColumn" text="Name" prefWidth="120"/>
+        		<TableColumn fx:id="contactColumn" text="Contact" prefWidth="100"/>
+        		<TableColumn fx:id="emailColumn" text="Email" prefWidth="150"/>
+        		<TableColumn fx:id="addressColumn" text="Address" prefWidth="150"/>
+    		</columns>
+		</TableView>
+   	</center>
+</BorderPane>
