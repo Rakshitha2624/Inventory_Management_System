@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 
 public class DBConnection {
     private static final String URL = "jdbc:mysql://localhost:3306/inventory_db";
-    private static final String USER = "root"; // replace with your MySQL user name
-    private static final String PASSWORD = "Rakshitha$26"; // replace with your MySQL password
+    private static final String USER = "user_name"; // replace with your MySQL user name
+    private static final String PASSWORD = "Password"; // replace with your MySQL password
 
     public static Connection getConnection() {
         try {
